@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ATM Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dashboard.css') }}">
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <div class="bank-icon">🏦</div>
+
+        <h1>BWU ATM SIMULATOR</h1>
+
+        <p class="welcome">Welcome to ATM Dashboard</p>
+
+
+        <div class="menu">
+
+            <a href="{{ url_for('balance') }}">
+                <button> Check Balance</button>
+            </a>
+
+            <a href="{{ url_for('deposit') }}">
+                <button> Deposit Money</button>
+            </a>
+
+            <a href="{{ url_for('withdraw') }}">
+                <button> Withdraw Money</button>
+            </a>
+
+            <a href="{{ url_for('login') }}">
+                <button class="exit"> Exit</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

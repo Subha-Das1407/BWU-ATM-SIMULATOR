@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BWU ATM Simulator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='login.css') }}">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="atm-icon">🏦</div>
+
+        <h1>BWU ATM SIMULATOR</h1>
+
+        
+
+        <form method="POST">
+
+            <div class="form-group">
+                <label for="account-number">Account Number</label>
+
+                <input
+                    type="text"
+                    id="account-number"
+                    name="account-number"
+                    placeholder="Enter account number"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="pin">PIN</label>
+
+                <input
+                    type="password"
+                    id="pin"
+                    name="pin"
+                    placeholder="Enter PIN"
+                    required
+                >
+            </div>
+
+            <button type="submit">LOGIN</button>
+
+            {% if message %}
+                <p class="error-message">{{ message }}</p>
+            {% endif %}
+
+        </form>
+
+        <p class="footer-text">Secure • Simple • Fast</p>
+
+    </div>
+
+</body>
+
+</html>

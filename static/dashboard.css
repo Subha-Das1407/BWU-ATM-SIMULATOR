@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url('./static/images/dashboard-bg.jpg');
+
+    min-height: 100vh;
+
+    margin: 0; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(10, 25, 50, 0.60),
+            rgba(10, 25, 50, 0.60)
+        ),
+        url("/static/image2.png");
+        
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.dashboard-container {
+    width: 450px;
+ 
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.bank-icon {
+    font-size: 50px;
+}
+
+h1 {
+    color: #123c7a;
+
+    font-size: 27px;
+
+    margin: 10px 0;
+}
+
+.welcome {
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu button {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 15px 0;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #1769aa;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #0d4f85;
+
+    transform: translateY(-2px);
+}
+
+.menu .exit {
+    background-color: #555;
+}
+
+.menu .exit:hover {
+    background-color: #333;
+}
